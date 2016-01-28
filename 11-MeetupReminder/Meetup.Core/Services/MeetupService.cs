@@ -44,32 +44,20 @@ namespace Meetup.Core.Services
 
         public static async Task<List<MeetupEvent>> GetMeetupsFor(string groupName)
         {
+            //Create a list of MeetUpevents
 
             var token = await Authenticate();
 
             var meetupServiceProvider = new MeetupServiceProvider(MeetupApiKey, MeetupSecretKey);
-
             var meetup = meetupServiceProvider.GetApi(token.Value, token.Secret);
 
             string json = await meetup.RestOperations.GetForObjectAsync<string>($"https://api.meetup.com/2/events?group_urlname={groupName}");
             var o = JObject.Parse(json);
             string resultsJson = o["results"].ToString();
-
             List<MeetupEvent> meetups = JsonConvert.DeserializeObject<List<MeetupEvent>>(resultsJson);
 
             return meetups;
 
-
-
-
-
-            
-
         }
-
-
-
-
-
     }
 }

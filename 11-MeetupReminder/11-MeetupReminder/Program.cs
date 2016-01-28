@@ -22,9 +22,8 @@ namespace _11_MeetupReminder
 
             foreach (var meetup in meetups)
             {
-                //Console.WriteLine(meetup.name);
-                meetupMessage += meetup.name;
-                meetupMessage += meetup.event_url;
+                meetupMessage += meetup.name + " ";
+                meetupMessage += meetup.event_url + " ";
             }
 
             TwillioService.Call(meetupMessage);
