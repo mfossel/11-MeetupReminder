@@ -21,12 +21,12 @@ namespace _11_MeetupReminder
             string meetupMessage = "";
 
             foreach (var meetup in meetups)
-            {
-                meetupMessage += meetup.name + " ";
-                meetupMessage += meetup.event_url + " ";
+            {   
+                meetupMessage += "\n" + meetup.name + " \n";
+                meetupMessage += meetup.event_url + "\n";
             }
 
-            TwillioService.Call(meetupMessage);
+            TwillioService.Text(meetupMessage);
         }
     }
 }

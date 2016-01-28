@@ -23,7 +23,7 @@ namespace Meetup.Core.Services
         {
             var meetupServiceProvider = new MeetupServiceProvider(MeetupApiKey, MeetupSecretKey);
 
-            /* OAuth 'dance' */
+            // Get Authenticication Token
             Console.Write("Getting request token...");
             var oauthToken = await meetupServiceProvider.OAuthOperations.FetchRequestTokenAsync("oob", null);
             Console.WriteLine("Done");
