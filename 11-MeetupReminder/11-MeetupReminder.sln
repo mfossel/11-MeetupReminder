@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-MeetupReminder", "11-MeetupReminder\11-MeetupReminder.csproj", "{37291952-0016-49D4-A3B2-17AC6F2BE721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetup.Core", "Meetup.Core\Meetup.Core.csproj", "{898F1A81-890A-4302-8CB6-9AA4ACB4C28B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37291952-0016-49D4-A3B2-17AC6F2BE721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37291952-0016-49D4-A3B2-17AC6F2BE721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37291952-0016-49D4-A3B2-17AC6F2BE721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37291952-0016-49D4-A3B2-17AC6F2BE721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898F1A81-890A-4302-8CB6-9AA4ACB4C28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898F1A81-890A-4302-8CB6-9AA4ACB4C28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898F1A81-890A-4302-8CB6-9AA4ACB4C28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898F1A81-890A-4302-8CB6-9AA4ACB4C28B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
